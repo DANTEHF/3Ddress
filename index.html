@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Dress</title>
+		<link href="css/index.css"rel="stylesheet" type="text/css" />
+		<script src="js/jquery-2.1.4.js"></script>
+		<!--3D渲染相关-->
+		<script type="text/javascript" src="build/three.js"></script>
+		<script type="text/javascript" src="js/loaders/OBJLoader.js"></script>
+		<script src="js/Detector.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div id="logo">
+					<h1>
+						
+						<span class="title"><em>D</em>RESS</span>
+						<span class="banner">tour of design</span>
+						<span class="line width500 __web-inspector-hide-shortcut__"></span>
+					</h1>
+					<img class="logo" src="img/logo.jpg" />
+				</div>
+			</header>
+			<div class="design_box">
+				<div class="dress_nav left">
+					<div class="design_elem">
+						<button class="design_show select_elem"><a style="font-family:微软雅黑">款式</a></button>
+						<div class="elem_img">
+							<ul>
+								<label>
+									<li class="elem_style">
+										<img src="img/style1.jpg" />
+									</li>
+									<li class="elem_style">
+										<img src="img/style2.jpg" />
+									</li>
+									<li class="elem_style">
+										<img src="img/style3.jpg" />
+									</li>
+									<li class="elem_style">
+										<img src="img/style1.jpg" />
+									</li>
+								</label>
+							</ul>
+						</div>
+					</div>
+					<div class="design_elem">
+						<button class="design_show select_elem"><a style="font-family:微软雅黑">纯色</a></button>
+						<div class="elem_img">
+							<ul>
+								<label>
+									<li class="elem_color">
+										<span class="Bisque"></span>
+									</li>
+									<li class="elem_color">
+										<span class="AliceBlue"></span>
+									</li>
+									<li class="elem_color">
+										<span class="HotPink"></span>
+									</li>
+									<li class="elem_color">
+										<span class="LightGrey"></span>
+									</li>
+									<li class="elem_color">
+										<span class="Orchid"></span>
+									</li><li class="elem_color">
+										<span class="salmon"></span>
+									</li>
+									<li class="elem_color">
+										<span class="blueviolet"></span>
+									</li>
+									<li class="elem_color">
+										<span class="teal"></span>
+									</li>
+									<li class="elem_color">
+										<span class="lightcoral"></span>
+									</li>
+									<li class="elem_color">
+										<span class="Orchid"></span>
+									</li>
+								</label>
+							</ul>
+						</div>
+					</div>
+					<div class="design_elem">
+						<button class="design_show select_elem"><a style="font-family:微软雅黑">花色</a></button>
+						<div class="elem_img">
+							<ul>
+								<label>
+									<li class="elem_material">
+										<span><img src="http://118.123.8.115:6789/mms3d/120%E5%A5%B3%E9%9E%8BShooin/texture/small/PF/5.jpg"/></span>
+									</li>
+									<li class="elem_material">
+										<span><img src="http://118.123.8.115:6789/mms3d/120%E5%A5%B3%E9%9E%8BShooin/texture/small/LA/1.jpg"/></span>
+									</li>
+									<li class="elem_material">
+										<span></span>
+									</li>
+									<li class="elem_material">
+										<span></span>
+									</li>
+								</label>
+							</ul>
+						</div>
+					</div>
+					<div class="design_elem">
+						<button class="design_show select_elem"><a style="font-family:微软雅黑">尺寸</a></button>
+						<div class="elem_img">
+							<ul>
+								<label>
+									<li class="elem_size">
+										<span>XL</span>
+									</li>
+									<li class="elem_size">
+										<span>L</span>
+									</li>
+									<li class="elem_size">
+										<span>M</span>
+									</li>
+									<li class="elem_size">
+										<span>S</span>
+									</li>
+								</label>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="design_area right">
+					<canvas id="dressShow"></canvas>
+					<div class="toolbox">
+						<ul>
+							<li><img src="img/back.png"/></li>
+							<li><img src="img/xuanzhuan.png"/></li>
+							<li><img src="img/clear.png"/></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--ajax请求模型-->
+		<script type="text/javascript">
+		var modelList;
+			$.ajax({
+				type:"get",
+				url:"",
+				dataType:'json',
+				success:function(data){
+					for(var i=0;i<data.length;i++){
+						modelList[i] = data[i];
+					}
+				}
+			});
+		</script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/dress/theWhole.js"></script>
+		<script type="text/javascript" src="js/dress/dressStyle.js"></script>
+	
+	</body>
+</html>

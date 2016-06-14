@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+}
+body{
+	height: 600px;
+}
+#wrap{
+	width: 80%;
+	height: 98%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+header{
+	height: 150px;
+	
+}
+header h1{
+	position: relative;
+}
+.title{
+	font-size: 45px;
+	font-family: MyFont;
+}
+.title em{
+	font-size: 80px;
+	margin-right: 10px;
+	
+}
+.banner{
+	font-size: 30px;
+	font-family: bfont;
+	margin-left: 20px;
+}
+.logo{
+	max-height: 200px;
+	text-align: center;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+@font-face { 
+	font-family: 'MyFont'; 
+	src: url('../font/AlexBrush-Regular.ttf'); 
+} 
+@font-face { 
+	font-family: 'bfont'; 
+	src: url('../font/KaushanScript-Regular.otf'); 
+} 
+.width500 {
+    width: 47%;
+    top: 85px;
+}
+
+.line {
+    height: 0px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 61px;
+    right: 0px;
+    width: 47%;
+}
+
+.dress_nav{
+	width: 30%;
+	/*height: 400px;*/
+}
+.design_show{
+	 background: url(../img/hidden.png) no-repeat 90% 13px #eee;
+}
+.design_hidden{
+	 background: url(../img/imgshow.png) no-repeat 90% 13px #eee;
+}
+
+.clear{
+	clear: both;	
+}
+.design_elem{
+	width: 100%;
+}
+.dress_nav{
+	border: 0.5px solid #d1d1d1;
+}
+.dress_nav button{
+	cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-family: arial;
+    line-height: 40px;
+    width: 100%;
+    text-indent: 15px;
+    margin-bottom: 2px;
+    text-align: left;
+    color: #000;
+    text-transform: capitalize;
+    outline: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.design_area{
+	width: 65%;
+	height: 400px;
+	/*border: 0.5px dashed #727272;*/
+}
+.elem_img{
+	display: none;
+}
+.elem_img ul{
+	list-style-type: none;
+}
+.elem_img ul li{
+	display: inline-block;
+	border: 0.5px solid transparent;
+}
+.elem_style{
+	width: 30%;
+	height: 100px;
+}
+.elem_img li:hover{
+	border: 0.5px solid #727272;
+}
+.elem_style img{
+	width: 100%;
+	height: 100%;
+}
+.elem_color span,.elem_size span,.elem_material span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #626262;
+}
+.elem_material img{
+	max-width: 100%;
+	height: 100%;
+}
+.Bisque{
+	background-color:bisque;
+}
+.AliceBlue{
+	background-color: aliceblue;
+}
+.HotPink{
+	background-color: hotpink;
+}
+.LightGrey{
+	background-color: lightgrey;
+}
+.lightcoral{
+	background-color: lightcoral;
+}
+.seagreen{
+	background-color: seagreen;
+}
+.salmon{
+	background-color: salmon;
+}
+.blueviolet{
+	background-color: blueviolet;
+}
+.seagreen{
+	background-color: seagreen;
+}
+.teal{
+	background-color: teal;
+}
+.Orchid{
+	background-color: orchid;
+}
+
+
+
+.toolbox ul{
+	list-style: none;
+	margin-left: 200px;
+}
+.toolbox li{
+	float: left;
+	margin-left: 40px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.toolbox li img{
+	width: 1.8em;
+	height: 1.8em;
+}
